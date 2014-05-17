@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simplicite.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+					
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+ 
+	<uses-sdk android:minSdkVersion="8"/>
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/simplicite_title" >
+        
+        <!-- Standard activities -->
+        
+        <activity
+            android:name=".ui.AppSessionConnection"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+			android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.AppSessionHome"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+			android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.BusinessObjectSearch"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+			android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".ui.BusinessObjectList"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+			android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".ui.BusinessObjectForm"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+			android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".ui.BusinessObjectSelect"
+            android:theme="@android:style/Theme.Dialog"
+			android:screenOrientation="portrait" />
+
+        <!-- Application activities -->
+        
+		<activity
+            android:name=".demo.DemoSubmitNewProduct"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+			android:screenOrientation="portrait" />
+        
+		<activity
+            android:name=".demo.DemoPlaceNewOrder"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+			android:screenOrientation="portrait" />
+        
+			</application>
+
+</manifest>
