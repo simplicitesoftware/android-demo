@@ -4,7 +4,10 @@
 Simplicit&eacute;&reg; Android&reg; API demo
 ============================================
 
-This project is a sample demo app using Simplicit&eacute;&reg; Android&reg API.
+Introduction
+------------
+
+This is the Android&reg; API demo app for the [Simplicit&ecute;&reg; platform](http://www.simplicitesoftware.com).
 
 License
 -------
